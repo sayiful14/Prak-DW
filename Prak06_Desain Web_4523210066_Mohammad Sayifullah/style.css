@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url("mybackground.jpg");
+}
+.weather-info {
+    margin-bottom: 20px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.day {
+    padding: 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+    background-color: #f0f0f0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.day hover {
+    background-color: #f0f0f0;
+    transform: scale(1.5);
+    cursor: pointer;
+}
