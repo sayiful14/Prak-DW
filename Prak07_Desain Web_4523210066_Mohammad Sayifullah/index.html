@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Buku Favorit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-200 text-gray-800 font-sansserif">
+    <div class="container mx-auto p-6">
+        <h1 class="text-center font-bold text-4xl text-black mb-8">Aplikasi Buku Favorit</h1>
+
+        <!-- Input Nama Pengguna -->
+        <div id="session-container" class="bg-white rounded-lg shadow-md p-5 mb-8">
+            <input 
+                class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-sky-400" 
+                type="text" 
+                id="namaPengguna" 
+                placeholder="Masukkan Nama Anda" 
+            />
+            <button 
+                class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md shadow-md w-full transition duration-300" 
+                id="btnSimpanNama"
+            >
+                Simpan Nama
+            </button>
+            <h3 class="text-lg text-center mt-5 font-semibold text-sky-500" id="salamPengguna"></h3>
+        </div>
+
+        <!-- Form Tambah Buku -->
+        <div class="bg-white rounded-lg shadow-md p-5 mb-8">
+            <h2 class="text-center font-bold text-2xl text-gray-700 mb-4">Tambah Buku</h2>
+            <form id="form-tambah-buku">
+                <input 
+                    class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-sky-400" 
+                    type="text" 
+                    id="judul" 
+                    placeholder="Judul Buku" 
+                    required 
+                />
+                <input 
+                    class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-sky-400" 
+                    type="text" 
+                    id="penulis" 
+                    placeholder="Penulis" 
+                    required 
+                />
+                <input 
+                    class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-sky-400" 
+                    type="number" 
+                    id="tahun" 
+                    placeholder="Tahun Terbit" 
+                    required 
+                />
+                <button 
+                    class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-md shadow-md w-full transition duration-300" 
+                    type="submit"
+                >
+                    Tambah Buku
+                </button>
+            </form>
+        </div>
+
+        <!-- Daftar Buku -->
+        <h2 class="text-center font-bold text-2xl text-gray-700 mb-4">Daftar Buku</h2>
+        <div id="daftar-buku" class="bg-white rounded-lg shadow-md p-5 mb-8"></div>
+
+        <!-- Buku Favorit -->
+        <h2 class="text-center font-bold text-2xl text-gray-700 mb-4">Buku Favorit</h2>
+        <div id="buku-favorit" class="bg-white rounded-lg shadow-md p-5"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
