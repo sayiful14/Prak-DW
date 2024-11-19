@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Tailwind CSS - Grid Layout dan Dark Mode</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-roboto">
+    <header class="bg-primary text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Galeri Foto</h1>
+          <button id="dark-mode-toggle" class="btn toggle-dark-mode">Toggle Dark Mode</button>
+        </div>
+      </header>
+
+      <section class="py-20">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-4">Selamat Datang di Galeri Kami</h2>
+          <p class="text-lg mb-8">Koleksi foto terbaik untuk Anda.</p>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://i.pinimg.com/originals/fb/75/71/fb7571321fda6c07e8b8b4f88cd346eb.jpg" alt="Foto 1" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Senja dipantai Tropis</h3>
+              <p class="text-gray-600 dark:text-gray-400">Sebuah pemandangan pantai tropis dengan matahari terbenam.</p>
+            </div>
+          </div>
+          <!-- Tambahkan Card 2, 3, dst. dengan struktur yang sama -->
+          <!-- Card 2 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://th.bing.com/th/id/OIP.OxlvAKbYPAnTGazjP2PJAAHaEo?rs=1&pid=ImgDetMain" alt="Foto 2" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Hutan Berkabut dipagi Hari</h3>
+              <p class="text-gray-600 dark:text-gray-400">Suasana mistis hutan di pagi hari yang berkabut.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://www.pelajaran.co.id/wp-content/uploads/2018/03/Pasar-Tradisional.jpg" alt="Foto 3" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Pasar Tradisional</h3>
+              <p class="text-gray-600 dark:text-gray-400">Sebuah pasar penuh warna dengan pedagang menjual buah dan sayur segar.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://th.bing.com/th/id/R.251914e2d3bc9e9c4dbacdccae81088b?rik=9kMcdlRj7ETNMg&riu=http%3a%2f%2fblj.co.id%2fwp-content%2fuploads%2f2015%2f12%2fJakarta_light2.jpg&ehk=m97TUvQY1VwJ%2fxAGVvWl5UJal3208uP96Jho%2bsy7cn4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Foto 4" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Kota dimalam Hari</h3>
+              <p class="text-gray-600 dark:text-gray-400">Kota dengan gedung-gedung pencakar langit berkilauan di langit malam.</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://th.bing.com/th/id/OIP.u2UZOFteKIswl-eYQURr4QHaE7?rs=1&pid=ImgDetMain" alt="Foto 5" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Gunung Bersalju</h3>
+              <p class="text-gray-600 dark:text-gray-400">Pemandangan pegunungan bersalju dengan langit biru cerah.</p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://img.freepik.com/premium-photo/green-rice-fields-landscape_889227-38774.jpg" alt="Foto 6" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Kehidupan Pedesaan</h3>
+              <p class="text-gray-600 dark:text-gray-400">Sebuah desa kecil dengan rumah-rumah kayu dan sawah hijau subur.</p>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://i.pinimg.com/originals/14/0b/7a/140b7a264350fc33e9c3425460e476fe.jpg" alt="Foto 7" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Padang Pasir</h3>
+              <p class="text-gray-600 dark:text-gray-400">Pemandangan padang pasir dengan bukit-bukit pasir emas yang bergelombang.</p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://img.okezone.com/content/2019/12/31/92/2147841/tips-menangkap-foto-kembang-api-malam-tahun-baru-2020-5VLBX0ig6z.jpg" alt="Foto 8" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Kembang Api Tahun Baru</h3>
+              <p class="text-gray-600 dark:text-gray-400">Langit malam yang dipenuhi letupan kembang api berwarna-warni.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-primary text-white p-4 mt-10">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 Galeri Foto. All rights reserved.</p>
+        </div>
+      </footer>
+
+      <script>
+        const toggleDarkMode = document.getElementById('dark-mode-toggle');
+        const htmlElement = document.documentElement;
+      
+        toggleDarkMode.addEventListener('click', () => {
+          htmlElement.classList.toggle('dark');
+        });
+      </script>
+</body>
+</html>
